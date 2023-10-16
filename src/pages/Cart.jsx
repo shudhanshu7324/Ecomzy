@@ -44,10 +44,10 @@ const Cart = () => {
 
 
         </div>) : (
-          <div>
-          <h1>Cart is Empty </h1>
+          <div className="flex flex-col items-center justify-center gap-3 h-[80vh]">
+          <h1 className="font-bold">Cart is Empty </h1>
           <Link to={"/"} >
-          <button>Shop Now</button>
+          <button className="text-green-700 border-2 border-green-700 rounded-full font-bold text-[15px] p-1 px-3 uppercase hover:bg-green-700 hover:text-white transition duration-300 ease-in">Shop Now</button>
           </Link>
           </div>
         )
